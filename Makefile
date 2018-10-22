@@ -4,7 +4,7 @@ NAME="mackerel-plugin-loom"
 .PHONY: run help meta build
 
 run: # Run trial
-	@go run main.go
+	@go run main.go -url http://172.31.32.97:9999/metrics
 
 build: # Build
 	@go build
